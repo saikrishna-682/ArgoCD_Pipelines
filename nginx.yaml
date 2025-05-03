@@ -15,7 +15,7 @@ spec:
       nodeSelector:
         kubernetes.io/hostname: kind-worker  # Correct indentation for nodeSelector
       tolerations:
-        - key: "nginx"  # This should match the key of the taint on the node
+        - key: "key"  # This should match the key of the taint on the node
           operator: "Equal"
           value: "nginx"  # This should match the value of the taint on the node
           effect: "NoSchedule"
